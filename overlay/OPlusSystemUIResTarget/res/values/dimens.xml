@@ -5,5 +5,5 @@
 -->
 <resources>
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">0dp</dimen>
+    <dimen name="status_bar_padding_start">20dp</dimen>
 </resources>

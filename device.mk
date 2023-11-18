@@ -23,6 +23,9 @@ TARGET_SCREEN_WIDTH := 2400
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947217761632659.xml
 
+# GMS
+WITH_GMS_COMMS_SUITE := false
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \

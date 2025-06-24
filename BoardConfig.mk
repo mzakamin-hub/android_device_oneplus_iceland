@@ -21,5 +21,8 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
+# Recovery
+TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION := ROTATION_RIGHT
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/iceland/BoardConfigVendor.mk

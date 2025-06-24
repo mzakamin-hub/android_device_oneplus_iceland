@@ -1,6 +1,11 @@
 # Bluetooth
 bluetooth.device.default_name=OnePlus Pad 4
 
+# Display
+debug.sf.ignore_hwc_physical_display_orientation=true
+ro.bootanim.set_orientation_4630947217761632659=ORIENTATION_90
+ro.surface_flinger.primary_display_orientation=ORIENTATION_270
+
 # Graphics
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=80

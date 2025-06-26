@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += $(foreach f,$(REGIONAL_PROP_FILES), \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Wireless pen
+PRODUCT_PACKAGES += \
+    OplusPen
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8850-common/common.mk)
 

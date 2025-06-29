@@ -19,6 +19,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 3392
 TARGET_SCREEN_WIDTH := 2400
 
+# Carrier
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.carrier=wifi-only
+
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947217761632659.xml

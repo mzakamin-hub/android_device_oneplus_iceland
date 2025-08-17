@@ -34,6 +34,9 @@ WITH_GMS_COMMS_SUITE := false
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# LiveDisplay
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AB,true)
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \

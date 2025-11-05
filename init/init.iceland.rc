@@ -1,0 +1,2 @@
+on boot
+    write /proc/touchpanel/touch_scene_para "mod para_effect pen_sensitive_level:254"

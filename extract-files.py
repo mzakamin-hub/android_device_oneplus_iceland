@@ -76,6 +76,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('rpcmem_alloc')
         .clear_symbol_version('rpcmem_free')
         .clear_symbol_version('rpcmem_to_fd'),
+    'odm/lib64/libocam_hmbird.so': blob_fixup()
+        .replace_needed('libosensenativeproxy_client.so', 'libosensenativeproxy_client_iceland.so'),
     (
         'vendor/lib64/camera/components/com.qti.node.dewarp.so',
         'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',

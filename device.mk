@@ -75,6 +75,10 @@ PRODUCT_COPY_FILES += $(foreach f,$(REGIONAL_PROP_FILES), \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# SSG
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ssg/sec_channel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/sec_channel.rc
+
 # Wireless pen
 PRODUCT_PACKAGES += \
     OplusPen

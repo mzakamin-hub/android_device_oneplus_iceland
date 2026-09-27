@@ -1,6 +1,9 @@
 # Audio
 vendor.audio.speaker.pm=0
 
+# Camera
+ro.camera.notify_nfc=0
+
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_hwc_vds=1

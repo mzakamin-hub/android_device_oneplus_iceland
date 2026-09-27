@@ -1,5 +1,8 @@
 # Display
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_hwc_vds=1
 vendor.display.disable_idle_fps_switch=1
+vendor.display.idle_time=0
 
 # Regional properties
 import /odm/etc/${ro.boot.prjname}/build.default.prop

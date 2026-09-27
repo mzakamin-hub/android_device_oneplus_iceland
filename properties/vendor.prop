@@ -1,6 +1,10 @@
 # Bluetooth
 bluetooth.device.default_name=OnePlus Pad 4
 
+# Dalvik
+dalvik.vm.heapgrowthlimit=512m
+dalvik.vm.heapminfree=4m
+
 # Display
 debug.sf.ignore_hwc_physical_display_orientation=true
 ro.bootanim.set_orientation_4630947217761632659=ORIENTATION_90

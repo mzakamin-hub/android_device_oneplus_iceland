@@ -9,10 +9,10 @@
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">400</integer>
+    <integer name="config_brightness_ramp_rate_fast">180</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow">50</integer>
+    <integer name="config_brightness_ramp_rate_slow">60</integer>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
@@ -53,7 +53,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">16</integer>
+    <item type="dimen" name="config_screenBrightnessDimFloat">0.05</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
@@ -82,35 +82,24 @@
         <item>8</item>
         <item>10</item>
         <item>15</item>
-        <item>20</item>
-        <item>25</item>
-        <item>30</item>
-        <item>40</item>
+        <item>35</item>
         <item>60</item>
-        <item>95</item>
         <item>100</item>
-        <item>200</item>
-        <item>300</item>
-        <item>400</item>
+        <item>260</item>
         <item>500</item>
-        <item>1000</item>
         <item>1100</item>
-        <item>1200</item>
-        <item>1300</item>
-        <item>1400</item>
-        <item>1500</item>
-        <item>1600</item>
-        <item>1700</item>
-        <item>1800</item>
-        <item>1900</item>
         <item>2000</item>
-        <item>4000</item>
+        <item>3500</item>
+        <item>5000</item>
         <item>7000</item>
         <item>10000</item>
-        <item>15000</item>
         <item>20000</item>
+        <item>26667</item>
         <item>30000</item>
         <item>40000</item>
+        <item>50000</item>
+        <item>60000</item>
+        <item>70000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -126,42 +115,31 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2.5</item>       <!--      0 lux -->
-        <item>7.5</item>       <!--      2 lux -->
-        <item>13.0</item>      <!--      4 lux -->
-        <item>18.0</item>      <!--      6 lux -->
-        <item>25.0</item>      <!--      8 lux -->
-        <item>30.0</item>      <!--     10 lux -->
-        <item>38.0</item>      <!--     15 lux -->
-        <item>45.0</item>      <!--     20 lux -->
-        <item>50.0</item>      <!--     25 lux -->
-        <item>55.0</item>      <!--     30 lux -->
-        <item>60.0</item>      <!--     40 lux -->
-        <item>70.0</item>      <!--     60 lux -->
-        <item>79.0</item>      <!--     95 lux -->
-        <item>82.0</item>      <!--    100 lux -->
-        <item>90.0</item>      <!--    200 lux -->
-        <item>98.0</item>      <!--    300 lux -->
-        <item>106.0</item>     <!--    400 lux -->
-        <item>113.0</item>     <!--    500 lux -->
-        <item>152.0</item>     <!--   1000 lux -->
-        <item>160.0</item>     <!--   1100 lux -->
-        <item>168.0</item>     <!--   1200 lux -->
-        <item>177.0</item>     <!--   1300 lux -->
-        <item>185.0</item>     <!--   1400 lux -->
-        <item>194.0</item>     <!--   1500 lux -->
-        <item>203.0</item>     <!--   1600 lux -->
-        <item>212.0</item>     <!--   1700 lux -->
-        <item>222.0</item>     <!--   1800 lux -->
-        <item>232.0</item>     <!--   1900 lux -->
-        <item>243.0</item>     <!--   2000 lux -->
-        <item>391.0</item>     <!--   4000 lux -->
-        <item>500.0</item>     <!--   7000 lux -->
-        <item>545.0</item>     <!--  10000 lux -->
-        <item>600.0</item>     <!--  15000 lux -->
-        <item>650.0</item>     <!--  20000 lux -->
-        <item>720.0</item>     <!--  30000 lux -->
-        <item>800.0</item>     <!--  40000 lux -->
+        <item>4</item>         <!--      0 lux -->
+        <item>6</item>         <!--      2 lux -->
+        <item>15</item>        <!--      4 lux -->
+        <item>21</item>        <!--      6 lux -->
+        <item>27</item>        <!--      8 lux -->
+        <item>36</item>        <!--     10 lux -->
+        <item>52</item>        <!--     15 lux -->
+        <item>98</item>        <!--     35 lux -->
+        <item>100</item>       <!--     60 lux -->
+        <item>113</item>       <!--    100 lux -->
+        <item>139</item>       <!--    260 lux -->
+        <item>144</item>       <!--    500 lux -->
+        <item>222</item>       <!--   1100 lux -->
+        <item>335</item>       <!--   2000 lux -->
+        <item>410</item>       <!--   3500 lux -->
+        <item>500</item>       <!--   5000 lux -->
+        <item>550</item>       <!--   7000 lux -->
+        <item>600</item>       <!--  10000 lux -->
+        <item>660</item>       <!--  20000 lux -->
+        <item>700</item>       <!--  26667 lux -->
+        <item>720</item>       <!--  30000 lux -->
+        <item>780</item>       <!--  40000 lux -->
+        <item>840</item>       <!--  50000 lux -->
+        <item>900</item>       <!--  60000 lux -->
+        <item>950</item>       <!--  70000 lux -->
     </array>
 
     <!-- Array of ambient lux threshold values. This is used for determining hysteresis constraint

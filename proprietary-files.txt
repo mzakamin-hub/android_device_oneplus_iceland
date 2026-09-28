@@ -776,6 +776,7 @@ odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin
 odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin
+odm/etc/camera/singleblur/license_release.license
 odm/etc/camera/singleblur/personseg.bin
 odm/etc/camera/singleblur/preview_seg.json
 odm/etc/camera/sticker/material/animoji/data.zip
@@ -974,6 +975,7 @@ odm/lib64/libAIMotion.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
 odm/lib64/libAncFilter.so
+odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegBaseSdk.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBasicTonePhoto.so
@@ -1005,6 +1007,7 @@ odm/lib64/libOPAlgoCamSinglePortrait.so
 odm/lib64/libOPLUSMotionDetection.so
 odm/lib64/libOplusPDCore.so
 odm/lib64/libOpo_awb.so
+odm/lib64/libPDParamParser.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSchedAssistExtImpl_vendor.so
 odm/lib64/libSpecRecon.so
@@ -1026,6 +1029,7 @@ odm/lib64/libaisd_fullfov.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
 odm/lib64/libalog.so
+odm/lib64/libalogencrypt.so
 odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
 odm/lib64/libapsdngsdk.so
 odm/lib64/libapsexif.so
@@ -1418,6 +1422,7 @@ vendor/lib64/libhme.so
 vendor/lib64/libhwfenceclient.so
 vendor/lib64/libhwliqinterface2.so
 vendor/lib64/libhwlispcffdump.so
+vendor/lib64/libiccprofile.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so

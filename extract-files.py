@@ -49,6 +49,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'service nvram_diag .*\n( {4}.*\n)*\n', ''),
     (
         'odm/lib64/libAlgoProcess.so',
+        'odm/lib64/libAncHumanSegFigureFusion.so',
         'odm/lib64/libEIS.so',
         'odm/lib64/libEISLive.so',
         'odm/lib64/libFaceBeautyJni.so',

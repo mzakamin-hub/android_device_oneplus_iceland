@@ -44,12 +44,6 @@ blob_fixups: blob_fixups_user_type = {
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
     (
-        'odm/etc/libnfc-mtp-SN220.conf_24831',
-        'odm/etc/libnfc-mtp-SN220.conf_24863',
-    ): blob_fixup()
-        .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
-    (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',
         'odm/lib64/libEISLive.so',
@@ -71,8 +65,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'odm/lib64/liboprec_audrec.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/etc/libnfc-nci.conf': blob_fixup()
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     (
         'vendor/lib64/camera/components/com.qti.node.dewarp.so',
         'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
@@ -87,7 +79,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'infiniti',
+    'iceland',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
